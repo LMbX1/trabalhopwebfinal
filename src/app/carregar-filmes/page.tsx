@@ -8,6 +8,7 @@ interface Movie {
   ano: number;
   generoId: number; 
   diretor: string;
+  genero: string;
 }
 
 export default function MovieList() {
@@ -69,6 +70,7 @@ export default function MovieList() {
             <strong>Título:</strong> {filme.titulo} <br />
             <strong>Ano:</strong> {filme.ano} <br />
             <strong>Diretor:</strong> {filme.diretor} <br />
+            <strong>Gênero:</strong> {filme.genero} <br />
             <button 
               onClick={() => handleDelete(filme.id)} 
               className="mt-2 bg-red-600 text-white rounded-md px-4 py-2 hover:bg-red-500"

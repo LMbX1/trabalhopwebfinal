@@ -86,10 +86,12 @@ export default function Genero() {
       <ul className="space-y-4">
         {generos.map((genero) => (
           <li key={genero.id} className="flex justify-between items-center border-b border-gray-300 pb-2">
-            <strong>Nome:</strong> {genero.nome}
+            <div className="flex items-center space-x-2">
+              <strong>Nome:</strong> <span>{genero.nome}</span>
+            </div>
             <button 
               onClick={() => handleDelete(genero.id)} 
-              className="ml-4 text-red-600 hover:text-red-800"
+              className="text-red-600 hover:text-red-800 ml-1"
             >
               Deletar
             </button>
