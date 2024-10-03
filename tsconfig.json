@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"],            // Bibliotecas incluídas no projeto
+    "allowJs": true,                                    // Permite arquivos JavaScript
+    "skipLibCheck": true,                               // Ignora verificações de tipo em bibliotecas
+    "strict": true,                                     // Ativa verificações de tipo estritas
+    "noEmit": true,                                     // Não gera arquivos de saída
+    "esModuleInterop": true,                            // Habilita interoperabilidade entre CommonJS e ES6
+    "forceConsistentCasingInFileNames": true,          // Força consistência nos nomes de arquivos
+    "module": "commonjs",                               // Tipo de módulo
+    "target": "ES6",                                   // Versão de ECMAScript alvo
+    "moduleResolution": "node",                         // Resolução de módulos
+    "resolveJsonModule": true,                          // Permite importação de módulos JSON
+    "isolatedModules": true,                            // Trata cada arquivo como um módulo isolado
+    "jsx": "preserve",                                 // Preserva JSX para que o Next.js possa processá-lo
+    "incremental": true,                                // Habilita a compilação incremental
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "baseUrl": "./src",                               // Base para resolução de módulos
+    "paths": {
+      "@/*": ["*"]                                   // Permite importações com prefixo '@/' para a pasta src
+    }
+  },
+  "include": [
+    "next-env.d.ts",                                   // Arquivo de declaração do Next.js
+    "**/*.ts",                                         // Inclui todos os arquivos .ts
+    "**/*.tsx",                                        // Inclui todos os arquivos .tsx
+    ".next/types/**/*.ts",                             // Tipos gerados pelo Next.js
+    "prisma/**/*"                                     // Inclui todos os arquivos dentro da pasta prisma
+  ],
+  "exclude": ["node_modules"]                         // Exclui a pasta node_modules
+}
