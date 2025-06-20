@@ -6,7 +6,9 @@ const config: Config = {
     "./src/app/pesquisa-filmes/page.{js,ts,jsx,tsx,mdx}",
     "./src/app/filme/page.{js,ts,jsx,tsx,mdx}",
     "./src/app/genero/page.{js,ts,jsx,tsx,mdx}",
+    "./src/app/layout.{js,ts,jsx,tsx,mdx}",
     "./src/app/page.{js,ts,jsx,tsx,mdx}",
+    "./src/app/carregar-200/page.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
